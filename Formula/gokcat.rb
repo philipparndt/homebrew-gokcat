@@ -5,13 +5,13 @@
 class Gokcat < Formula
   desc "Command-line tool for consuming Kafka topics"
   homepage "https://github.com/philipparndt/gokcat"
-  version "0.7.1"
+  version "0.7.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/philipparndt/gokcat/releases/download/v0.7.1/gokcat_darwin_x86_64.tar.gz"
-      sha256 "5fd27d529fe0affae67defc30f1861e2561d8d7d69c53f128b91d950ffcce163"
+      url "https://github.com/philipparndt/gokcat/releases/download/v0.7.2/gokcat_darwin_x86_64.tar.gz"
+      sha256 "3b66c06b92747834d0820f004401206fade46788999851c20472a75e0da07c73"
 
       def install
         bin.install "gokcat"
@@ -39,8 +39,8 @@ class Gokcat < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/philipparndt/gokcat/releases/download/v0.7.1/gokcat_darwin_arm64.tar.gz"
-      sha256 "2f74a57a17e7731fb96ce09074ec709f22115f5454dfe53e52ab9d73c9d2613b"
+      url "https://github.com/philipparndt/gokcat/releases/download/v0.7.2/gokcat_darwin_arm64.tar.gz"
+      sha256 "c44f4254911e373d364e3a87037a64134e4579d2aae15c12d4d3ffb15ca4be47"
 
       def install
         bin.install "gokcat"
@@ -71,8 +71,8 @@ class Gokcat < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/gokcat/releases/download/v0.7.1/gokcat_linux_x86_64.tar.gz"
-      sha256 "131e68c459905cf40d7c49f3a9457554fe473d1eb18c92c21733a6e4020551ed"
+      url "https://github.com/philipparndt/gokcat/releases/download/v0.7.2/gokcat_linux_x86_64.tar.gz"
+      sha256 "115648f24329c1a41c569c5821defd047dae6ae0a13aabfd5c866e0f1ac45952"
       def install
         bin.install "gokcat"
 
@@ -99,8 +99,8 @@ class Gokcat < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/philipparndt/gokcat/releases/download/v0.7.1/gokcat_linux_arm64.tar.gz"
-      sha256 "82f24d997394c56095b382dae000e02c9ef4a8763e97430b83eb8bb6119ba859"
+      url "https://github.com/philipparndt/gokcat/releases/download/v0.7.2/gokcat_linux_arm64.tar.gz"
+      sha256 "46571f327610230eea05541d4e4a7ab7f68c38909176be549bb4f8c6ba3bf46d"
       def install
         bin.install "gokcat"
 
